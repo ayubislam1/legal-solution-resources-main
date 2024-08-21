@@ -46,6 +46,42 @@
 				background-repeat: no-repeat;
 				width: 100%;
 			}
+			.slide-1 {
+				background-image: linear-gradient(
+						to left,
+						rgba(13, 19, 33, 0.15),
+						rgba(13, 19, 33, 0.8)
+					),
+					url("./images/slider-1.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+				width: 100%;
+			}
+			.slide-2 {
+				background-image: linear-gradient(
+						to left,
+						rgba(13, 19, 33, 0.15),
+						rgba(13, 19, 33, 0.8)
+					),
+					url("./images/slider-2.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+				width: 100%;
+			}
+			.slide-3 {
+				background-image: linear-gradient(
+						to left,
+						rgba(13, 19, 33, 0.15),
+						rgba(13, 19, 33, 0.8)
+					),
+					url("./images/slider-3.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+				width: 100%;
+			}
+			.filter {
+				background-color: rgba(17, 17, 17, 0.9);
+			}
 		</style>
 		<script>
 			tailwind.config = {
@@ -174,19 +210,19 @@
 								but the majority have suffered alteration in some form, by
 								injected humour.
 							</p>
-							<div class="flex">
-								<div class="flex-1">
-									<div>
+							<div class="flex md:items-center justify-center md:w-full">
+								<div class="lg:flex-1 md:flex-1">
+									<div class="">
 										<input
-											class="input input-bordered md:w-3/4"
+											class="input input-bordered md:w-[300px] lg:w-9/12"
 											placeholder="Search"
 										/>
 									</div>
 								</div>
 
-								<div class="inline-flex md:-ml-20 ml-3">
+								<div class="inline-flex lg:-ml-20">
 									<button
-										class="px-6 bg-color-primary text-white rounded-lg font-semibold hover:border-2"
+										class="md:px-6 px-10 bg-color-primary text-white rounded-lg font-semibold hover:border-2 md:py-3"
 									>
 										Search
 									</button>
@@ -198,6 +234,7 @@
 			</section>
 		</header>
 		<main class="md:container md:mx-auto">
+			<!-- legal Practice -->
 			<section class="mt-10">
 				<div class="text-center md:w-3/5 md:mx-auto mt-5 mb-5">
 					<h2 class="garamond text-4xl">The Legal Practice Area</h2>
@@ -212,7 +249,7 @@
 					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full grid-rows-2 px-20 mb-10"
 				>
 					<div
-						class="w-auto text-center flex flex-col justify-center items-center py-20 px10 space-y-5 border-b-2 border-gray-200"
+						class="w-auto text-center flex flex-col justify-center items-center md:py-20 md:px10 space-y-5 border-b-2 border-gray-200"
 					>
 						<div class="w-16">
 							<img src="./images/business.png" alt="" />
@@ -230,7 +267,7 @@
 						</div>
 					</div>
 					<div
-						class="w-auto text-center flex flex-col justify-center items-center py-20 px10 space-y-5 border-2 border-gray-200 bg-gradient-to-t to-[#F3F3F3] from-white"
+						class="md:w-auto text-center flex flex-col justify-center items-center md:py-20 md:px-5 py-10 space-y-5 border-2 border-gray-200 bg-gradient-to-t to-[#F3F3F3] from-white"
 					>
 						<div class="w-16">
 							<img src="./images/criminal.png" alt="" />
@@ -248,7 +285,7 @@
 						</div>
 					</div>
 					<div
-						class="w-auto text-center flex flex-col justify-center items-center py-20 px-5 space-y-5 border-b-2 border-gray-200"
+						class="md:w-auto text-center flex flex-col justify-center items-center py-10 md:py-20 md:px-5 space-y-5 border-b-2 border-gray-200"
 					>
 						<div class="w-16">
 							<img src="./images/child.png" alt="" />
@@ -266,7 +303,7 @@
 						</div>
 					</div>
 					<div
-						class="w-auto text-center flex flex-col justify-center items-center py-20 px-5 space-y-5"
+						class="w-auto text-center flex flex-col justify-center items-center py-10 md:py-20 md:px-5 space-y-5"
 					>
 						<div class="w-16">
 							<img src="./images/education.png" alt="" />
@@ -284,7 +321,7 @@
 						</div>
 					</div>
 					<div
-						class="w-auto text-center flex flex-col justify-center items-center py-20 px-5 space-y-5 border-x-2 border-gray-200"
+						class="w-auto text-center flex flex-col justify-center items-center md:py-20 md:px-5 py-10 space-y-5 border-x-2 border-gray-200"
 					>
 						<div class="w-16">
 							<img src="./images/divorce.png" alt="" />
@@ -302,7 +339,7 @@
 						</div>
 					</div>
 					<div
-						class="w-auto h-a text-center flex flex-col justify-center items-center py-20 px-5 space-y-5"
+						class="w-auto h-a text-center flex flex-col justify-center items-center md:py-20 md:px-5 py-10 space-y-5"
 					>
 						<div class="w-16">
 							<img src="./images/tax.png" alt="" />
@@ -317,6 +354,120 @@
 							class="bg-color-primary rounded-full w-7 h-7 items-center flex justify-center text-white"
 						>
 							<i class="fa-solid fa-arrow-right"></i>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="text-center md:w-3/4 mb-10 mx-auto space-y-5">
+					<h2 class="text-4xl font-semibold garamond">What Our Client Say</h2>
+					<p class="poppins text-gray-500 text-base">
+						There are many variations of passages of Lorem Ipsum available, but
+						the majority have suffered alteration in some form, by injected
+						humour.
+					</p>
+				</div>
+				<div class="carousel w-full">
+					<div
+						id="slide1"
+						class="carousel-item relative w-full slide-1 py-20 mb-10 filter"
+					>
+						<div class="text-center md:w-3/4 md:mx-auto text-white">
+							<div class="avatar mt-10">
+								<div
+									class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2"
+								>
+									<img
+										src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+									/>
+								</div>
+							</div>
+							<h1 class="mb-5 text-4xl font-bold garamond mt-5">
+								Jannatul Mawa
+							</h1>
+							<p class="mb-5 text-base poppins">
+								There are many variations of passages of Lorem Ipsum available,
+								but the majority have suffered alteration in some form, by
+								injected humour.
+							</p>
+						</div>
+						<div
+							class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+						>
+							<a href="#slide3" class="btn btn-circle bg-transparent text-white"
+								>❮</a
+							>
+							<a href="#slide2" class="btn btn-circle bg-transparent text-white"
+								>❯</a
+							>
+						</div>
+					</div>
+					<div
+						id="slide2"
+						class="carousel-item relative w-full slide-2 py-20 mb-10 filter"
+					>
+						<div class="text-center md:w-3/4 md:mx-auto text-white">
+							<div class="avatar mt-10">
+								<div
+									class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2"
+								>
+									<img
+										src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+									/>
+								</div>
+							</div>
+							<h1 class="mb-5 text-4xl font-bold garamond mt-5">
+								Jannatul Mawa
+							</h1>
+							<p class="mb-5 text-base poppins">
+								There are many variations of passages of Lorem Ipsum available,
+								but the majority have suffered alteration in some form, by
+								injected humour.
+							</p>
+						</div>
+						<div
+							class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+						>
+							<a href="#slide1" class="btn btn-circle bg-transparent text-white"
+								>❮</a
+							>
+							<a href="#slide3" class="btn btn-circle bg-transparent text-white"
+								>❯</a
+							>
+						</div>
+					</div>
+					<div
+						id="slide3"
+						class="carousel-item relative w-full slide-3 py-20 mb-10 filter"
+					>
+						<div class="text-center md:w-3/4 md:mx-auto text-white">
+							<div class="avatar mt-10">
+								<div
+									class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2"
+								>
+									<img
+										src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+									/>
+								</div>
+							</div>
+							<h1 class="mb-5 text-4xl font-bold garamond mt-5">
+								Jannatul Mawa
+							</h1>
+							<p class="mb-5 text-base poppins">
+								There are many variations of passages of Lorem Ipsum available,
+								but the majority have suffered alteration in some form, by
+								injected humour.
+							</p>
+						</div>
+						<div
+							class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+						>
+							<a href="#slide2" class="btn btn-circle bg-transparent text-white"
+								>❮</a
+							>
+							<a href="#slide1" class="btn btn-circle bg-transparent text-white"
+								>❯</a
+							>
 						</div>
 					</div>
 				</div>
